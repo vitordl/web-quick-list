@@ -14,7 +14,7 @@
     <div class="font-semibold">Editar anotação<br><br></div>
     
     <form action="{{ route('atualizar_isso', $tarefa_ed->id) }}" method="post">
-        
+        @csrf
         <input type="text" class="p-2 mx-auto rounded-lg w-full" value="{{ $tarefa_ed->tarefas }}" name="txt_pra_atualizar" maxlength="250">
         
         <div class="mt-3"></div>

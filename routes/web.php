@@ -22,7 +22,7 @@ Route::get('deletar_todos_view', function(){
     return view('deletar_todos_view');
 })->name('deletar_todos_view');
 
-Route::get('deletar_todos', 'Main@deleteAll')->name('deletar_todos');
+Route::post('deletar_todos', 'Main@deleteAll')->name('deletar_todos');
 
 Route::get('sobre', function(){
     return view('sobre');
