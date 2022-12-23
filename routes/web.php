@@ -8,7 +8,7 @@ Route::get('/', 'Main@index')->name('home');
 
 Route::get('novo', 'Main@create')->name('novo_item');
 
-Route::get('salvar', 'Main@store')->name('salvar_aqui');
+Route::post('salvar', 'Main@store')->name('salvar_aqui');
 
 Route::get('editar/{id}', 'Main@edit')->name('editar_isso');
 
