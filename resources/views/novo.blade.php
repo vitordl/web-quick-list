@@ -13,8 +13,8 @@
 <div class="p-5 mx-auto max-w-3xl bg-blue-200  bg-opacity-40 rounded-lg ">
     <div class="font-semibold">Nova anotação<br><br></div>
     
-    <form action="{{ route('salvar_aqui') }}" method="post">
-        @csrf
+    <form action="{{ route('salvar_aqui') }}" method="get">
+        
         <input type="text" class="p-2  mx-auto rounded-lg w-full" name="novo_item" maxlength="250" placeholder="Digite aqui" autofocus="autofocus">
         
         <div class="mt-3"></div>
