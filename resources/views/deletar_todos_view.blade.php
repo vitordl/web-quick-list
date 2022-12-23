@@ -15,7 +15,7 @@
     <div class="text-xs  text-gray-500 mb-2">O código é 2254</div>
 
     <form action="{{ route('deletar_todos') }}" method="get">
-        @csrf
+        
         <input type="text" class="p-2 bg-gray-300 mx-auto rounded-lg w-full" name="codigo_txt" maxlength="4">
         
         <div class="mt-3 justify-between flex">
